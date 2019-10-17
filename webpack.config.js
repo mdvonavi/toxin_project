@@ -13,10 +13,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
+  mode: 'development',
   entry: [
     './src/js/common.js',
     './src/scss/main.scss',
   ],
+  devServer: {
+    contentBase: '/dist/',
+    writeToDisk: true,
+  },
   output: {
     filename: './index.js'
   },

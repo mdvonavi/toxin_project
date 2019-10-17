@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./src/scss/main.scss"],"names":[],"mappings":"AAAA,KACE,qBAAsB,CACtB,SAAU,C","file":"main.css","sourcesContent":["body{\r\n  background-color: #fff;\r\n  color: red;\r\n}"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./src/scss/main.scss"],"names":[],"mappings":"AAAA,KACE,qBAAsB,CACtB,UAAY,CACZ,cAAe,C","file":"main.css","sourcesContent":["body{\r\n  background-color: #fff;\r\n  color: black;\r\n  font-size: 36px;\r\n}"],"sourceRoot":""}
