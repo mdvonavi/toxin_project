@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const PATHS = {
   src: path.join(__dirname, 'src'),
-  dist: path.join(__dirname, 'dist'),
+  dist: path.join(__dirname, 'docs'),
   assets: 'assets/'
 };
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -19,24 +19,20 @@ module.exports = {
     './src/scss/main.scss',
   ],
   devServer: {
-    contentBase: '/dist/',
+    contentBase: './docs/',
     writeToDisk: true,
   },
   output: {
-    filename: './index.js'
+    filename: '../docs/index.js'
   },
   devtool: "source-map",
   plugins: [
     new MiniCssExtractPlugin({
-      // Options similar to the same options in webpackOptions.output
-      // all options are optional
-      filename: '[name].css',
-      //chunkFilename: '[id].css',
-     // ignoreOrder: false, // Enable to remove warnings about conflicting order
+      filename: '../docs/[name].css',
     }),
     ...PAGES.map(page => new HtmlWebpackPlugin({
       template: `${PAGES_DIR}/${page}`,
-      filename: `./${page.replace(/\.pug/,'.html')}`
+      filename: `../docs/${page.replace(/\.pug/,'.html')}`
     }))
   ],
   module: {
