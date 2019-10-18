@@ -13,10 +13,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: [
     './src/js/common.js',
     './src/scss/main.scss',
+    //'./src/img/logo/logo.svg',
   ],
   devServer: {
     contentBase: './docs/',
@@ -71,6 +72,12 @@ module.exports = {
     {//обработчик pug
       test: /\.pug$/,
       loader: 'pug-loader'
+    },
+    {
+      test: /\.(png|svg|jpg|gif)$/,
+      use:[
+        'file-loader'
+      ]
     },
     ],
   },

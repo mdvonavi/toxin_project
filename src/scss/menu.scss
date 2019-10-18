@@ -1,0 +1,22 @@
+.menu-list {
+    list-style-type: none;
+    margin-top: 26px;
+    margin-bottom: 23px;
+    margin-left: 297px;
+
+    &__item {
+        display: inline;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 31px;
+        color: rgba(31, 32, 65, 0.5);
+
+        &-active {
+            color: rgba(31, 32, 65, 0.75);
+            font-weight: bold;
+        }
+    }
+}

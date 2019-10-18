@@ -4,13 +4,26 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         title Document
     body
-        h1 hello world
-ul
-    li
-    li
-    li tyyr
-    li gethsrth
-    li Далеко-далеко за, словесными горами в стране гласных и согласных 
-p Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, vitae. Velit molestiae animi quasi corrupti, aliquid tempore, suscipit doloremque deleniti rem molestias, voluptatum autem alias nesciunt inventore quibusdam neque est.
+        .header
+            .logo
+                img.logo_img(src='./img/logo/logo.svg', alt='logo')
+            .menu
+                ul.menu-list
+                    li.menu-list__item.menu-list__item-active Home
+                    li.menu-list__item About Us
+                    li.menu-list__item Services
+                    li.menu-list__item Careers
+                    li.menu-list__item News
+                    li.menu-list__item Documentation
+                .menu__btn.menu__btn-login
+                .menu__btn.menu__btn-register
+        .footer
+            .logo
+                img.logo_img(src='./img/logo/logo.svg', alt='logo')
+            .footer-info
+                p.footer-info__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius recusandae ad cupiditate? Ullam tempora incidunt facilis consequatur temporibus explicabo magnam esse fugit sequi obcaecati, optio ab ea ex rem quis!
+            .social
+
